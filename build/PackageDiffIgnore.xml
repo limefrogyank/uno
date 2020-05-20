@@ -979,6 +979,28 @@
 		<Member
 			  fullName="Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer.ILottieVisualSourceProvider"
 			  reason="Incorrect namespace"/>
+
+			  <!-- Begin remove IFrameworkElement -->
+		<Member
+			  fullName="Windows.UI.Xaml.IUIElement"
+			  reason="Removed non-WinUI type"/>
+		<Member
+			  fullName="Windows.UI.Xaml.Controls.BatchCollection`1"
+			  reason="Removed non-WinUI type"/>
+		<Member
+			  fullName="Windows.UI.Xaml.Controls.IImage"
+			  reason="Removed non-WinUI type"/>
+			  
+		<Member
+			  fullName="Windows.UI.Xaml.Controls.Image"
+			  reason="Now inherits correctly from FrameworkElement, all IFrameworkElement members removed"/>
+		<Member
+			  fullName="Windows.UI.Xaml.Controls.ScrollContentPresenter"
+			  reason="Now inherits correctly from FrameworkElement, all IFrameworkElement members removed"/>
+		<Member
+			  fullName="Windows.UI.Xaml.Controls.ProgressRing"
+			  reason="Now inherits correctly from FrameworkElement, all IFrameworkElement members removed"/>
+			  <!-- End remove IFrameworkElement -->
 	  </Types>
 	  <Methods>
 		<Member
@@ -990,6 +1012,9 @@
 		<Member
 			  fullName="System.Void Windows.UI.Xaml.Automation.Peers.AutomationPeerAnnotation..ctor()"
 			  reason="UWP does not have this ctor"/>
+
+			  <!-- Begin remove IFrameworkElement -->
+			  <!-- End remove IFrameworkElement -->
 	  </Methods>
 	</IgnoreSet>
   </IgnoreSets>
